@@ -20,6 +20,13 @@ public class MenuForm extends JFrame{
 		setContentPane(root);
 		pack();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		GRAZKOMPUTEREMButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				opcjeCzasu o = new opcjeCzasu();
+			}
+		});
+
 		setVisible(true);
 	}
 
