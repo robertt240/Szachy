@@ -5,24 +5,25 @@ import java.awt.event.ActionListener;
 
 import static com.sun.glass.ui.Cursor.setVisible;
 
-/**
- * Created by dominikolczyk on 12.04.2016.
- */
+
 public class MenuForm extends JFrame{
 	private JButton dupaButton;
 	private JPanel root;
+	private JButton a2GRACZYButton;
+	private JButton WCZYTAJGRĘButton;
+	private JButton ZAGADKITAKTYCZNEButton;
+	private JButton GRAZKOMPUTEREMButton;
+	private JRadioButton muzykaOffRadioButton;
 
 	public MenuForm() {
 		super("Hello");
 		setContentPane(root);
 		pack();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		dupaButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showConfirmDialog(MenuForm.this,"DUAPODAJSDASD");
-			}
-		});
 		setVisible(true);
+	}
+
+	private void createUIComponents() {
+		// TODO: place custom component creation code here
 	}
 }
