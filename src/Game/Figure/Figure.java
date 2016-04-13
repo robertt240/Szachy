@@ -7,8 +7,8 @@ import java.util.List;
 /**
  * Created by dominikolczyk on 13.04.2016.
  */
-public interface Figure {
+public abstract class Figure {
 	String color;
 	Integer value;
-	List<Pair<Integer,Integer>> possibleMoves(Pair<Integer,Integer>);
+	abstract List<Pair<Integer,Integer>> possibleMoves(Pair<Integer,Integer> position);
 }
