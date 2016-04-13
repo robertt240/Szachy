@@ -21,7 +21,7 @@ public class opcjeCzasu extends JFrame{
         super("Hello");
         setContentPane(root2);
         pack();
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
 
