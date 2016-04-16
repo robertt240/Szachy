@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MenuForm">
-  <grid id="27dc6" binding="root" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="root" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="true" hgap="-1" vgap="-1">
     <margin top="15" left="15" bottom="15" right="15"/>
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
     <properties>
+      <alignmentX value="0.25"/>
+      <alignmentY value="0.25"/>
+      <autoscrolls value="true"/>
       <doubleBuffered value="true"/>
     </properties>
     <border type="none"/>
@@ -18,8 +21,10 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-16367340"/>
           <contentAreaFilled value="true"/>
           <enabled value="true"/>
+          <foreground color="-9258179"/>
           <hideActionText value="true"/>
           <text value="2 GRACZY"/>
           <verticalAlignment value="0"/>
@@ -33,7 +38,9 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-16367340"/>
           <enabled value="true"/>
+          <foreground color="-9258179"/>
           <hideActionText value="false"/>
           <text value="WCZYTAJ GRĘ"/>
           <verticalAlignment value="0"/>
@@ -47,7 +54,9 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-16367340"/>
           <enabled value="true"/>
+          <foreground color="-9258179"/>
           <hideActionText value="false"/>
           <text value="ZAGADKI TAKTYCZNE"/>
         </properties>
@@ -60,6 +69,8 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-16367340"/>
+          <foreground color="-9258179"/>
           <text value="GRA Z KOMPUTEREM"/>
         </properties>
       </component>
@@ -70,6 +81,8 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-1"/>
+          <foreground color="-16367340"/>
           <horizontalAlignment value="4"/>
           <horizontalTextPosition value="10"/>
           <selected value="false"/>
