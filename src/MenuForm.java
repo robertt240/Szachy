@@ -2,6 +2,10 @@ import javax.swing.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+
 
 import static com.sun.glass.ui.Cursor.setVisible;
 
@@ -28,6 +32,40 @@ public class MenuForm extends JFrame{
 		});
 
 		setVisible(true);
+		Clip clip=null;
+		try{
+			AudioInputStream audioInputStream =
+					AudioSystem.getAudioInputStream(
+							this.getClass().getResource("/music.wav"));
+			clip = AudioSystem.getClip();
+			clip.open(audioInputStream);
+			//clip.start();
+			clip.loop(100);
+		}
+
+
+		catch(Exception ex)
+		{
+			System.out.println(ex.getMessage());
+		}
+
+		final Clip clip1 = clip;
+		muzykaOffRadioButton.addActionListener(new ActionListener() {
+
+			int clicked =0;
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+
+				if(clicked % 2 ==0){
+					clip1.stop();
+				}else{
+					clip1.loop(100);
+				}
+				clicked++;
+			}
+		});
+
 	}
 
 	private void createUIComponents() {
